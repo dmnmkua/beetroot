@@ -1,0 +1,44 @@
+body {
+    line-height: 1.5rem;
+    text-shadow: 0 0 1px #fff;
+    background: linear-gradient(lightblue, lightyellow);
+    color: #055;
+    font-family: monospace;
+}
+
+.about_me {
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1rem;
+    text-decoration: underline;
+}
+
+.header_2 {
+    font-size: 1.5rem;
+    font-variant: small-caps;
+    letter-spacing: .5rem;
+    padding-left: 50px;
+}
+
+.header::before {
+    content: "123";
+}
+
+.denotation {
+    font-weight: 900;
+}
+
+.contacts_list a {
+    text-decoration: none;
+}
+
+.some_information {
+    text-indent: 4rem;
+    line-height: 1.5rem;
+}
+
+
+.my_photo img {
+    border-radius: 5px;
+}

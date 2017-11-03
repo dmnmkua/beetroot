@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.main_header {
+    background: #4B4F57;
+    color: #FE707A;
+    padding: 10px;
+}
+
+.caption,
+.under_caption {
+    text-align: center;
+    margin: 10px auto;
+}
+
+.main_block {
+    background: #3D4147;
+    color: white;
+    padding: 30px;
+}
+
+.center_block {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.shopping_list {
+    margin-bottom: 30px;
+}
+
+.shop_list_item {
+    padding: 10px;
+    list-style: none;
+}
+
+.shop_list_item:nth-child(odd) {
+    background: #8B7C9E;
+}
+
+.shop_list_item:nth-child(even) {
+    background: #7E6E93;
+}
+
+.shop_list_item:nth-child(2),
+.shop_list_item:nth-child(6) {
+    text-decoration: line-through;
+    color: #A599B1;
+}
+
+.shop_list_item:nth-child(4) {
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+    background: #665977;
+}
+
+.note {
+    font-size: .6rem;
+    color: #CCC4CE;
+}
+
+.bon_appetit {
+    text-align: center;
+    padding: 10px;
+    color: #FE707A;
+    background: #4B4F57;
+    margin-bottom: 50px;
+}

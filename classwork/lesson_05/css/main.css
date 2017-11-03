@@ -1,0 +1,174 @@
+/* adjustment setting */
+
+*  {
+    box-sizing: border-box;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans";
+}
+
+
+
+/*header*/
+
+header {
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.logo, .nav {
+    display: inline-block;
+    width: 49%;
+}
+
+.logo > a {
+    text-decoration: none;
+}
+
+.nav {
+    text-align: right;
+}
+
+.nav__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    font-size: 0;
+}
+
+.nav__item {
+    display: inline-block;
+    font-size: 1rem;
+}
+
+.nav__link {
+    text-decoration: none;
+    display: block;
+    padding: 15px 25px;
+}
+
+.nav__link:hover {
+    background: grey;
+}
+
+
+
+/* cards */
+
+.cards__list {
+    background: #f5f5f5;
+    border-radius: 3px;
+    border: 1px solid #ededed;
+    padding: 0;
+    list-style: none;
+}
+
+.cards__item {
+    padding: 15px;
+    font-size: 0;
+    margin-bottom: 20px;
+}
+
+.cards__img-content {
+    width: 10%;
+    vertical-align: top;
+}
+
+.cards__content-element {
+    display: inline-block;
+    font-size: 1rem;
+}
+
+.cards__img-wrap {
+    margin: 0;
+}
+
+.cards__img-wrap img {
+    width: 100%;
+}
+
+.cards__btn-wrap {
+    background: #fff;
+    border: 1px solid #ededed;
+    border-radius: 3px;
+    font-size: 0;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.cards__btn-link {
+    text-decoration: none;
+    color: #000;
+    font-size: 5px;
+    color: #D3D3D3;
+    font-size: 1rem;
+    width: 33%;
+    text-align: center;
+    display: inline-block;
+}
+
+.cards__title-wrap {
+    width: 25%;
+    vertical-align: top;
+    text-transform: capitalize;
+    padding: 0 15px;
+    display: inline-block;
+}
+
+.cards__title-link {
+    color: #000;
+    text-decoration: none;
+    font-weight: 900;
+    display: inline-block;
+}
+
+.cards__author-link {
+    text-decoration: none;
+}
+
+.cards__desc {
+    width: 30%;
+    font-size: .8rem;
+}
+
+.cards__desc-text {
+    vertical-align: top;
+    margin: 0;
+    color: #555;
+}
+
+.cards__price-wrap {
+    width: 35%;
+    text-align: center;
+    vertical-align: top;
+}
+
+.cards__price,
+.cards__logo,
+.cards_sales {
+    display: block;
+}
+
+.cards__price ~ span {
+    color: #555;
+}
+
+
+.cards__price {
+    font-size: 2rem;
+}

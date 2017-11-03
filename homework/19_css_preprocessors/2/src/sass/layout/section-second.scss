@@ -1,0 +1,181 @@
+.section-second {
+  padding-top: 100px;
+  background: #f0f0f0;
+
+  @media screen and (max-width: 930px) {
+    padding-top: 50px;
+  }
+
+
+  //        HEADER
+  &__header {
+    text-align: center;
+    max-width: 827px;
+    margin: 0 auto;
+
+    @media screen and (max-width: 930px) {
+      max-width: 700px;
+    }
+
+    &-title {
+      font-family: "Oswald", sans-serif;
+      color: $main-color;
+      font-size: 0.875rem;
+      font-weight: 700;
+      margin: 0;
+    }
+
+    &-desc {
+      font-family: "Montserrat", sans-serif;
+      color: #333333;
+      font-size: 1.75rem;
+      font-weight: 500;
+      line-height: 1.429;
+      margin: 0;
+      margin-top: 40px;
+
+      @media screen and (max-width: 930px) {
+        margin-top: 20px;
+      }
+
+      @media screen and (max-width: 400px) {
+        font-size: 1.4rem;
+      }
+    }
+  }
+
+  //        SLIDER
+
+  &__slide-wrap {
+    position: relative;
+    padding: 55px 0 425px 0;
+
+    @media screen and (max-width: 1200px) {
+      padding: 55px 0 340px 0;
+    }
+    @media screen and (max-width: 930px) {
+      padding: 55px 0 195px 0;
+    }
+
+    @media screen and (max-width: 767px) {
+      padding: 30px 0 30px 0;
+    }
+  }
+
+  &__img {
+    max-width: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @media screen and (max-width: 1200px) {
+      max-width: 70%;
+    }
+
+    @media screen and (max-width: 930px) {
+      max-width: 50%;
+    }
+
+    @media screen and (max-width: 767px) {
+      max-width: 90%;
+      position: relative;
+    }
+  }
+
+  &__img-play {
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    transform: translateX(-50%);
+
+    @media screen and (max-width: 930px) {
+      top: 50%;
+    }
+  }
+
+
+  //        BOTTOM WRAP
+
+  &__bottom-wrap {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: flex-start;
+
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+    }
+  }
+
+  &__quote-wrap {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 500px;
+    padding-right: 75px;
+    padding-bottom: 70px;
+
+    @media screen and (max-width: 767px) {
+      width: 100%;
+    }
+
+    @media screen and (max-width: 400px) {
+      padding-right: 0;
+    }
+  }
+
+  &__avatar {
+    margin-right: 30px;
+  }
+
+  &__qoute-icon {
+    font-size: 1.75rem;
+    color: $main-color;
+  }
+
+  &__quote-desc {
+    font-family: 'Montserrat', sans-serif;
+    color: #333333;
+    font-size: 1.375rem;
+    font-weight: 400;
+    line-height: 1.545;
+    margin-top: 70px;
+
+    @media screen and (max-width: 930px) {
+      margin-top: 10px;
+    }
+  }
+
+  &__quote-author {
+    font-family: "Montserrat", sans-serif;
+    color: #797979;
+    font-size: 0.875rem;
+    font-weight: 700;
+    margin-top: 60px;
+  }
+
+  &__desc-wrap {
+    width: 570px;
+    padding: 90px 60px 70px 60px;
+    background: #fff;
+    font-family: "Montserrat", sans-serif;
+    color: #333333;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.75;
+
+    @media screen and (max-width: 930px) {
+      padding: 30px 60px 70px 60px;
+    }
+
+    @media screen and (max-width: 767px) {
+      width: 100%;
+    }
+  }
+
+  &__desc-first {
+    padding-top: 0;
+  }
+}

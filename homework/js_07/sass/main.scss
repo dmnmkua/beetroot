@@ -1,0 +1,114 @@
+// Normalize
+@import "../libs/normalize/normalize.css";
+
+* {
+  box-sizing: border-box;
+}
+
+.block {
+  max-width: 500px;
+  margin: 100px auto;
+}
+
+.block__list {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin: 30px 0;
+}
+
+.block__item {
+  width: 33%;
+  text-align: center;
+  padding: 10px 0;
+  margin: 0;
+  position: relative;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  letter-spacing: 7px;
+  cursor: pointer;
+  transition: .3s;
+
+  &:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    background: grey;
+    height: 2px;
+    transition: left .3s ease-out, right .3s ease-out;
+  }
+}
+
+.block__item--active {
+  transition: .3s;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  overflow: hidden;
+
+  &:after {
+    left: 0;
+    right: 0;
+  }
+}
+
+.block__attach {
+  height: 0;
+  opacity: 0;
+  color: #444;
+  transition: .3s ease-in;
+}
+
+.block__attach--active {
+  height: 100%;
+  opacity: 1;
+}
+
+.block__attach--preloader {
+  height: 30px;
+  width: 30px;
+  margin: auto;
+  border: 5px solid #999;
+  border-top: 5px solid #333;
+  border-radius: 30px;
+  animation: rotate 1s infinite linear;
+}
+
+.block__attach-title {
+  padding: 0;
+  margin: 0;
+}
+
+.block__attach-desc {
+  padding: 0;
+  margin: 0;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#block_1 {
+  color: orange;
+}
+
+#block_2 {
+  color: lightgreen;
+}
+
+#block_3 {
+  color: purple;
+}

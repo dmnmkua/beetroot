@@ -1,0 +1,169 @@
+.seven-section {
+  background: #fff url(../img/img-11.png) center center no-repeat;
+  background-size: cover;
+  padding: 100px 0 120px;
+
+  &__desc-wrap {
+    margin: 0 auto;
+    width: 350px;
+    text-align: center;
+  }
+
+  &__title {
+    font-family: Raleway, sans-serif;
+    color: #262626;
+    font-size: 5.625rem;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  &__desc {
+    font-family: Raleway, sans-serif;
+    color: #262626;
+    font-size: 1.063rem;
+    font-weight: 300;
+    line-height: 1.471;
+    margin: 40px 0 50px;
+  }
+
+  &__contacts {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__form {
+    width: 500px;
+    margin-right: 170px;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__input-name,
+  &__input-email,
+  &__input-tel {
+    width: 100%;
+    border: none;
+    padding: 20px;
+    margin-bottom: 15px;
+    background-color: rgba(0, 196, 196, 0.5);
+    font-family: Raleway, sans-serif;
+    color: #fff;
+    font-weight: 700;
+    font-size: 0.938rem;
+    line-height: 1.667;
+    transition: .3s;
+
+    &:hover {
+      background-color: #00c4c4
+    }
+
+    &:focus {
+      animation: shadow-focus .3s forwards;
+      background: #00c4c4;
+    }
+  }
+
+  &__textarea {
+    width: 100%;
+    border: none;
+    padding: 20px;
+    margin-bottom: 15px;
+    background-color: rgba(0, 196, 196, 0.5);
+    font-family: Raleway, sans-serif;
+    color: #fff;
+    font-weight: 700;
+    font-size: 0.938rem;
+    line-height: 1.667;
+    transition: .3s;
+    resize: none;
+
+    &:hover {
+      background-color: rgba(0, 196, 196, 1);
+    }
+
+    &:focus {
+      animation: shadow-focus .3s forwards;
+    }
+  }
+
+  @keyframes shadow-focus{
+    0% {
+      box-shadow: inset 0px 0 0 #355b82;
+    }
+    100% {
+      box-shadow: inset 5px 0 0 #355b82;
+    }
+  }
+
+  ::-webkit-input-placeholder  {
+    color: #fff;
+    font-size: 0.938rem;
+    font-weight: 300;
+    line-height: 1.667;
+  }
+
+  ::-webkit-input-placeholder {
+    color: #fff;
+    font-size: 0.938rem;
+    font-weight: 300;
+    line-height: 1.667;
+  }
+  ::-moz-placeholder          {
+    color: #fff;
+    font-size: 0.938rem;
+    font-weight: 300;
+    line-height: 1.667;
+  }/* Firefox 19+ */
+  :-moz-placeholder           {
+    color: #fff;
+    font-size: 0.938rem;
+    font-weight: 300;
+    line-height: 1.667;
+  }/* Firefox 18- */
+  :-ms-input-placeholder      {
+    color: #fff;
+    font-size: 0.938rem;
+    font-weight: 300;
+    line-height: 1.667;
+  }
+
+  &__address {
+    width: 500px;
+  }
+
+  &__address-title,
+  &__email-title,
+  &__phone-title {
+    font-family: Raleway, sans-serif;
+    color:  #262626;
+    font-size: 1.063rem;
+    font-weight: 700;
+    line-height: 1.471;
+    text-transform: uppercase;
+    font-style: normal;
+    margin: 0;
+  }
+
+  &__address-desc,
+  &__email-link,
+  &__phone-link {
+    font-family: Raleway, sans-serif;
+    color:  #262626;
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 1.25;
+    margin: 0;
+    text-decoration: none;
+    font-style: normal;
+  }
+
+  &__email-block,
+  &__phone-block {
+    margin-top: 25px;
+  }
+
+}

@@ -1,0 +1,113 @@
+@media screen and (max-width: 768px) {
+
+  .wrapper {
+    margin-top: -70px;
+  }
+
+  .wrapper--open {
+    margin-top: 0px;
+  }
+
+  .row--middle {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .social, .nav {
+    text-align: right;
+  }
+
+  .header__bottom-left {
+    justify-content: center;
+  }
+
+  .header__search-field {
+    width: 100%;
+  }
+
+  .header__bottom {
+    padding: 63px 0 150px 0;
+  }
+
+  .main-nav {
+    background: #97455f;
+    text-align: right;
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+    position: relative;
+  }
+
+  .main-nav__list {
+    display: block;
+    transition: all 1s cubic-bezier(.9, -0.38, 0, 1.36);
+    position: absolute;
+    z-index: 10;
+    width: 50%;
+    top: 54px;
+    right: -60%;
+    text-align: center;
+    border-radius: 0;
+    height: 100vh;
+  }
+
+  .main-nav__check:checked~.main-nav__list {
+    right: 0;
+  }
+
+  .main-nav__menu-icon {
+    display: block;
+    color: #ccc;
+    width: 100%;
+  }
+
+  .sliders {
+    padding: 20px 10px;
+  }
+
+  .sliders__caption {
+    right: 0;
+  }
+
+  .block-article--padding {
+      padding: 0 5px;
+  }
+
+  .block-article-second {
+    flex-direction: column;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+  }
+
+  .block-article-second__img {
+    margin: 0;
+  }
+
+  .block-article-second__title {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .contact-us-today--padding {
+      padding: 0 20px;
+  }
+
+  .contact-us-today {
+    flex-wrap: wrap;
+    padding: 24px 5px;
+  }
+
+  .latest__title, .company-details__title, .company-details__info, .contact-us__title {
+    text-align: center;
+  }
+
+  .contact-us__submit {
+    width: 100%;
+  }
+
+  .copyright, .author {
+    text-align: center;
+  }
+
+}

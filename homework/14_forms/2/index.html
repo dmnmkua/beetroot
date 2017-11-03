@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>forms</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="libs/normalize/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+    <form action="get" class="form">
+        
+<!--        header-->
+        <div class="form__header">
+            
+            <div class="form__payment">
+                
+                <h1 class="form__title">Harold Finch</h1>
+                <p class="form__under-title">your total</p>
+                
+            </div>
+            
+            <div class="form__price">
+                
+                <p class="form__price-in-dollar">$88</p>
+                
+            </div>
+            
+        </div> <!--        ./header-->
+        
+        
+<!--        form body-->
+        <div class="form__creditcard-data">
+            
+            <p class="form__text-card-number">Credit card number</p>
+            
+            <input type="text" class="form__input-card-number" autofocus value="4321 ">
+            
+            <p class="form__text-date">Expiration date</p>
+            
+            <select name="month" id="" class="form__select-month">
+               <option value="month" disabled selected>Month</option>
+                <option value="January">January</option>
+                <option value="February">February</option>
+                <option value="March">March</option>
+                <option value="April">April</option>
+                <option value="May">May</option>
+                <option value="June">June</option>
+                <option value="Jule">Jule</option>
+                <option value="August">August</option>
+                <option value="September">September</option>
+                <option value="October">October</option>
+                <option value="November">November</option>
+                <option value="December">December</option>
+            </select>
+            
+            <select name="year" id="" class="form__select-year">
+               <option value="year" disabled selected>Year</option>
+                <option value="2017">2017</option>
+                <option value="2016">2016</option>
+                <option value="2015">2015</option>
+                <option value="2014">2014</option>
+                <option value="2013">2013</option>
+            </select>
+            
+            <p class="form__cvv">CVV</p>
+            
+            <input type="text" class="form__input-cvv">
+            
+            <span class="form__text-cvv">3 or 4 digits - <a href="#" class="form__link">view example</a></span>
+            
+            <div class="form__hr"></div>
+            
+            <input type="submit" class="form__submit" value="Pay">
+            
+            <div class="form__cancel-order">
+                
+                <a href="#" class="form__link">Cancel order</a>
+                
+            </div>
+            
+        </div> <!--        ./form body-->
+        
+    </form>
+</body>
+</html>

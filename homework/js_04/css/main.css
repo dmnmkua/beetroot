@@ -1,0 +1,15 @@
+.table {
+  max-width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.table__row {
+
+}
+
+.table__data {
+  border: 1px solid #000;
+  text-align: center;
+  padding: 10px;
+}

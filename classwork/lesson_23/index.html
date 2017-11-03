@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+  <div class="wrapper">
+    <header class="header">
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item current">
+            <a href="#first" class="nav__link">First</a>
+          </li>
+          <li class="nav__item">
+            <a href="#second" class="nav__link">Second</a>
+            <ul class="nav__secList">
+              <li class="nav__secItem">
+                <a href="#" class="nav__secLink">item 1</a>
+              </li>
+              <li class="nav__secItem">
+                <a href="#" class="nav__secLink">item 2</a>
+              </li>
+              <li class="nav__secItem">
+                <a href="#" class="nav__secLink">item 3</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <a href="#third" class="nav__link">Third</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="maincontent">
+      <div class="section" id="first">First section.</div>
+      <div class="section" id="second">Second section.</div>
+      <div class="section" id="third">Third section.</div>
+    </div>
+  </div>
+
+
+  <script src="jquery-3.2.1.min.js" charset="utf-8"></script>
+  <script src="main.js" charset="utf-8"></script>
+</body>
+</html>

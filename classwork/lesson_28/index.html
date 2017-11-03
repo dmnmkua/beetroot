@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Simple Map</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+        #map {
+            height: 100%;
+        }
+
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="map"></div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDT2fpxOrjQ6n_pStYSP4R6IHRgCqW3rPA&callback=initMap" async defer></script>
+    <script>
+        function initMap() {
+            var options = {
+                center: { lat: 46.975, lng: 31.9946 },
+                zoom: 15,
+                disableDefaultUI: false,
+                styles: [
+                  {
+                      "featureType": "all",
+                      "elementType": "geometry",
+                      "stylers": [
+                          {
+                              "color": "#34b0f8"
+                          }
+                      ]
+                  },
+                  {
+                      "featureType": "all",
+                      "elementType": "labels.text.fill",
+                      "stylers": [
+                          {
+                              "gamma": 0.01
+                          },
+                          {
+                              "lightness": 20
+                          }
+                      ]
+                  },
+                  {
+                      "featureType": "all",
+                      "elementType": "labels.text.stroke",
+                      "stylers": [
+                          {
+                              "saturation": -31
+                          },
+                          {
+                              "lightness": -33
+                          },
+                          {
+                              "weight": 2
+                          },
+                          {
+                              "gamma": 0.8
+                          }
+                      ]
+                  },
+                  {
+                      "featureType": "all",
+                      "elementType": "labels.icon",
+                      "stylers": [
+                          {
+                              "visibility": "off"
+                          }
+                      ]
+                  },
+                  {
+                      "featureType": "administrative.country",
+                      "elementType": "geometry.fill",
+                      "stylers": [
+                          {
+                              "visibility": "on"
+                          },
+                          {
+                              "saturation": "90"
+                          },
+                          {
+                              "lightness": "87"
+                          }
+                      ]
+                  },
+                  {
+                      "featureType": "administrative.country",
+                      "elementType": "geometry.stroke",
+                      "stylers": [
+                          {
+                              "saturation": "-100"
+                          },
+                          {
+                              "lightness": "100"
+                          },
+                          {
+                              "gamma": "10.00"
+                          }
+                      ]
+                  },
+                  {
+                      "featureType": "administrative.country",
+                      "elementType": "labels.text",
+                      "stylers": [
+                          {
+                              "saturation": "91"
+                          },
+                          {
+                              "lightness": "-97"
+                          },
+                          {
+                              "gamma": "9.24"
+                          }
+                      ]
+                  },
+                  {
+                      "featureType": "landscape",
+                      "elementType": "geometry",
+                      "stylers": [
+                          {
+                              "lightness": 30
+                          },
+                          {
+                              "saturation": 30
+                          }
+                      ]
+                  },
+                  {
+                      "featureType": "landscape",
+                      "elementType": "geometry.fill",
+                      "stylers": [
+                          {
+                              "saturation": "61"
+                          },
+                          {
+                              "gamma": "4.87"
+                          }
+                      ]
+                  },
+                  {
+                      "featureType": "poi",
+                      "elementType": "geometry",
+                      "stylers": [
+                          {
+                              "saturation": 20
+                          }
+                      ]
+                  },
+                  {
+                      "featureType": "poi.park",
+                      "elementType": "geometry",
+                      "stylers": [
+                          {
+                              "lightness": 20
+                          },
+                          {
+                              "saturation": -20
+                          }
+                      ]
+                  },
+                  {
+                      "featureType": "poi.sports_complex",
+                      "elementType": "labels.text.stroke",
+                      "stylers": [
+                          {
+                              "saturation": "100"
+                          }
+                      ]
+                  },
+                  {
+                      "featureType": "road",
+                      "elementType": "geometry",
+                      "stylers": [
+                          {
+                              "lightness": 10
+                          },
+                          {
+                              "saturation": -30
+                          }
+                      ]
+                  },
+                  {
+                      "featureType": "road",
+                      "elementType": "geometry.stroke",
+                      "stylers": [
+                          {
+                              "saturation": 25
+                          },
+                          {
+                              "lightness": 25
+                          }
+                      ]
+                  },
+                  {
+                      "featureType": "water",
+                      "elementType": "all",
+                      "stylers": [
+                          {
+                              "lightness": -20
+                          }
+                      ]
+                  }
+              ]
+            }
+            var map = new google.maps.Map(document.getElementById('map'), options);
+            function m(coordinates) {
+                var marker = new google.maps.Marker({
+                    position: { lat: coordinates.position.lat, lng: coordinates.position.lng },
+                    map: coordinates.map,
+                    icon: 'https://image.flaticon.com/icons/png/128/33/33687.png'
+                })
+                var infoWindow = new google.maps.InfoWindow({
+                  content: `<h1>${coordinates.content}</h1>`
+                })
+                infoWindow.open(map, marker);
+            }
+            var markers = [
+                {
+                    position: { lat: 46.9716995, lng: 32.0139778 },
+                    map: map,
+                    content: 'Univercity'
+                },
+                {
+                    position: { lat: 46.9716995, lng: 32.0128834 },
+                    map: map,
+                    content: 'Cafe'
+                }
+            ]
+
+            markers.forEach(function(el) {
+                m(el)
+            });
+
+
+        }
+
+    </script>
+</body>
+
+</html>

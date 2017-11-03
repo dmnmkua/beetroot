@@ -1,0 +1,32 @@
+.img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.preload {
+  width: 200px;
+  height: 200px;
+  transition: 1s;
+}
+
+/*#arrow {
+  transition: 1s;
+}*/
+
+.preload #arrow {
+  fill: lightblue;
+  transform-origin: center center;
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

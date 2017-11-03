@@ -1,0 +1,143 @@
+.navigation-btn {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.navigation {
+    width: 270px;
+    height: 100vh;
+
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    transition: transform .1s ease-in;
+    will-change: transform;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateX(-100%);
+    z-index: 999;
+}
+
+.active-navigation {
+    transform: translateX(0);
+}
+
+.overlay {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, .3);
+    z-index: 99;
+}
+
+
+/***
+*
+* SLIDER
+*
+***/
+* {
+    box-sizing: border-box;
+}
+
+.clearfix:before, .clearfix:after {
+    content: '';
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+
+.slider {
+    width: 402px;
+    height: 200px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #000;
+}
+
+.btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    outline: none;
+    z-index: 9999;
+    cursor: pointer;
+}
+
+.btn i {
+    font-size: 35px;
+}
+
+.btn-prev {
+    left: 15px;
+}
+.btn-next {
+    right: 15px;
+}
+
+.slider__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: absolute;
+    transition: left .5s ease-in-out;
+    left: 0;
+}
+
+.slider__item {
+    float: left;
+}
+
+.slider__img {
+    max-width: 100%;
+    display: block;
+}
+
+.dots {
+
+}
+
+.dots__list {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-top: 20px;
+}
+
+.dots__item {
+  width: 10px;
+  height: 10px;
+  background: lightblue;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  transition: box-shadow .3s;
+}
+
+.dots__item--active {
+  -webkit-box-shadow: 0 0 0 5px lightblue;
+  box-shadow: 0 0 0 5px lightblue;
+}
+
+.dots__item:hover {
+  -webkit-box-shadow: 0 0 10px 5px lightblue;
+  box-shadow: 0 0 10px 5px lightblue;
+}
+
+.dots__item:not(:last-child) {
+  margin-right: 40px;
+}

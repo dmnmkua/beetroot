@@ -1,0 +1,56 @@
+.header
+  padding-top: 112px
+
+  @media screen and (max-width: 460px)
+    padding-top: 30px
+
+.header-wrap
+  text-transform: uppercase
+  text-align: center
+
+  &__desc
+    font-family: Raleway
+    color:  #898f8f
+    font-size: 1.125rem
+    font-weight: 500
+
+  &__title
+    font-family: Roboto
+    color:  $main-color
+    font-size: 3.75rem
+    font-weight: 900
+    line-height: 1.1
+
+  &__line
+    width: 50px
+    margin: 0 auto
+    position: relative
+
+    &:before,
+    &:after
+      content: ""
+      width: 210px
+      height: 2px
+      background: $main-color
+      position: absolute
+      top: 50%
+
+      @media screen and (max-width: 1024px)
+        width: 100px
+
+    &:before
+      left: -210px
+
+      @media screen and (max-width: 1024px)
+        left: -100px
+
+    &:after
+      right: -210px
+
+      @media screen and (max-width: 1024px)
+        right: -100px
+
+    i
+      color: $main-color
+      font-size: 1.25rem
+      font-weight: 400

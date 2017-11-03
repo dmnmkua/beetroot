@@ -1,0 +1,15 @@
+@media screen and (max-width: 400px) {
+    
+    .form__creditcard-data {
+        padding: 20px 5px;
+    }
+    
+    .form__select-month,
+    .form__select-year {
+        width: 100%;
+    }
+    
+    .form__select-month {
+        margin-right: 0;
+    }
+}

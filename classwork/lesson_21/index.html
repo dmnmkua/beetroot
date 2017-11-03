@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <button id="nav-btn" class="navigation-btn">
+        <i class="material-icons">menu</i>
+    </button>
+    <nav class="navigation" id="navigation"></nav>
+
+
+    <div class="slider">
+        <button id="prev" class="btn btn-prev">
+            <i class="material-icons">navigate_before</i>
+        </button>
+        <ul class="slider__list clearfix">
+            <li class="slider__item">
+                <img class="slider__img" src="http://www.aiai.ed.ac.uk/project/coax/demo/2002/graphics/CoAX-Ship-Explosion-400x200.jpg" alt="">
+            </li>
+            <li class="slider__item">
+                <img class="slider__img" src="https://www.bu.edu/eng/files/2016/04/400x200.shutterstock_263248619-copy.jpg" alt="">
+            </li>
+            <li class="slider__item">
+                <img class="slider__img" src="https://uberblogapi.10upcdn.com/wp-content/uploads/sites/361/2015/08/St-Petersburg_UberBOAT_blog_960x540_r1-400x200.jpg">
+            </li>
+        </ul>
+        <button id="next" class="btn btn-next">
+            <i class="material-icons">navigate_next</i>
+        </button>
+    </div>
+    <div class="dots">
+      <ul class="dots__list"></ul>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: #F1F1F1;
+    font-family: sans-serif;
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+
+form {
+    font-size: 0;
+    margin: 50px 0;
+    vertical-align: top;
+}
+
+.search {
+    border: none;
+    width: 90%;
+    margin: 0;
+    font-size: 5rem;
+    font-weight: 900;
+    color: #ec5a62;
+    background: transparent;
+    padding: 0;
+}
+
+.search,
+.submit {
+    display: inline-block;
+}
+
+.search:focus {
+    outline: none;
+}
+
+.search::-webkit-input-placeholder { color: #c2c2c2; }
+.search::-moz-placeholder          { color: #c2c2c2; } /* Firefox 19+ */
+.search:-moz-placeholder           { color: #c2c2c2; } /* Firefox 18- */
+.search:-ms-input-placeholder      { color: #c2c2c2; }
+
+.submit {
+    width: 10%;
+    height: 5rem;
+    background: url(../img/magnifier.svg) right center no-repeat;
+    background-size: 4rem 4rem;
+    margin: 0;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline: none;
+    transition: .3s;
+}
+
+.submit:hover {
+    transform: scale(1.1);
+}
+
+.column__list {
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+}
+
+.column__item {
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 30%;
+    font-size: 1rem;
+    vertical-align: top;
+}
+
+.column__header {
+    text-transform: uppercase;
+    color: #c2c2c2;
+    font-size: 1rem;
+}
+
+.column__item:not(:last-child) {
+    margin-right: 5%;
+}
+
+.people__list,
+.popular__list,
+.recent__list {
+    padding: 0;
+}
+
+.item {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 5px;
+}
+
+.link {
+     background: rgba(118,117,128,0.05);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 900;
+    color: #c2c2c2;
+    font-size: 0;
+    transition: .2s;
+}
+
+.link:hover {
+    background: rgba(118,117,128,0.1);
+    color: #ec5a62;
+}
+
+.people__avatar,
+.popular__image,
+.recent__image {
+    display: inline-block;
+    width: 20%;
+    font-size: 1rem;
+}
+
+.people__avatar {
+    border-radius: 50%;
+}
+
+.title {
+    display: inline-block;
+    margin: 0;
+    vertical-align: top;
+    width: 80%;
+    font-size: 1rem;
+    padding-left: 10px;
+}
+
+
+
+
+

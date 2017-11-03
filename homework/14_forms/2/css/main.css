@@ -1,0 +1,132 @@
+/*@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');*/
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    background: 
+        url(../img/unsplash.png) right no-repeat,
+        linear-gradient(to bottom right, #545a5b, #171a1e) no-repeat;
+    background-size: contain;
+    height: 100vh;
+}
+
+.form {
+    max-width: 336px;
+    margin: 35px auto;
+}
+
+.form__header {
+    background: #f8edaf;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form__title {
+    color: #6e7f7b;
+    font-size: .875rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.form__under-title {
+    text-transform: uppercase;
+    color: #a6a28d;
+    font-size: .625rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+.form__price {
+}
+
+.form__price-in-dollar {
+    color: #637570;
+    font-size: 2.25rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+.form__creditcard-data {
+    background: #fff;
+    padding: 45px 25px;
+}
+
+.form__text-card-number,
+.form__text-date,
+.form__cvv {
+    color: #9eabad;
+    font-size: .813rem;
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+.form__input-card-number,
+.form__select-month,
+.form__select-year,
+.form__input-cvv {
+    padding: 12px 9px;
+    border: 2px solid #bac8cb;
+    background: none;
+    color: #727f82;
+    font-size: .813rem;
+    margin-bottom: 28px;
+    font-weight: 400;
+}
+
+.form__input-card-number {
+    width: 100%;
+}
+
+.form__select-month {
+    width: 60%;
+    margin-right: 8%;
+}
+
+.form__select-year {
+    width: 30%;
+}
+
+.form__input-cvv {
+    width: 30%;
+}
+
+.form__text-cvv {
+    color: #9eabad;
+    font-size: .75rem;
+    font-weight: 400;
+}
+
+.form__link {
+    color: #9eabad;
+    font-size: .75rem;
+    font-weight: 400;
+    text-decoration: none;
+    border-bottom: 1px solid #9eabad;
+}
+
+.form__hr {
+    border-bottom: 1px solid #edf0f1;
+}
+
+.form__submit {
+    padding: 15px 0;
+    text-align: center;
+    width: 100%;
+    border: none;
+    background: #25b86a;
+    color: #fff;
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+.form__cancel-order {
+    text-align: center;
+    margin-top: 22px;
+}

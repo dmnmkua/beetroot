@@ -1,0 +1,38 @@
+@import "libs.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+
+
+
+//  SECTION FIRST
+@import "./layout/first-section.scss";
+
+//  SECTION SECOND
+@import "./layout/second-section.scss";
+
+//  SECTION THIRD
+@import "./layout/third-section.scss";
+
+//  SECTION FOURTH
+@import "./layout/fourth-section.scss";
+
+//  FIFTH SECTION
+@import "./layout/fifth-section.scss";
+
+//  SIX SECTION
+@import "./layout/six-section.scss";
+
+//  SEVEN SECTION
+@import "./layout/seven-section.scss";
+
+//  EIGht SECTION
+@import "./layout/eight-section.scss";

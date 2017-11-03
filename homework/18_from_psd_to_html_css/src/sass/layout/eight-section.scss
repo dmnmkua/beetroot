@@ -1,0 +1,38 @@
+.eight-section {
+  background: #262626;
+  padding: 30px 0;
+
+  &__container {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__copyright {
+    font-family: Raleway, sans-serif;
+    color: #b9b9b9;
+    font-size: 1rem;
+    line-height: 1.563;
+  }
+
+  &__logo {
+    font-family: Pacifico, sans-serif;
+    color: #b9b9b9;
+    font-size: 1.563rem;
+  }
+
+  &__author {
+    font-family: Raleway, sans-serif;
+    color:  #b9b9b9;
+    font-size: 0.938rem;
+    font-weight: 300;
+    line-height: 1.667;
+
+    & span {
+      color: #ff2b58;
+      font-weight: 700;
+    }
+  }
+}

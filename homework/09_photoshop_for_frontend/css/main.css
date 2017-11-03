@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,600i,900');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700,900');
+
+. {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background: #efefef;
+}
+
+.wrapper {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+
+
+/*header*/
+
+.header {
+    padding: 30px 0;
+}
+
+.content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.logo,
+.navigation {
+    display: inline-block;
+    width: 49%;
+}
+
+.logo__link {
+    display: block;
+    font-family: "Roboto", sans-serif;
+    color: #303030;
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: .563;
+    text-align: left;
+}
+
+.navigation__list {
+    padding: 0;
+    text-align: right;
+}
+
+.navigation__item {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: inline-block
+}
+
+.navigation__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.navigation__link {
+    display: block;
+    font-family: "Roboto", sans-serif;
+    color: #303030;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+
+
+/*maincontent*/
+
+.maincontent {
+    margin-top: 50px;
+}
+
+/*sliders*/
+
+.sliders {
+    margin-bottom: 103px;
+}
+
+.sliders__about,
+.sliders__block-img {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.sliders__about {
+    width: 45%;
+    margin-right: 8%;
+    text-align: right;
+}
+
+.sliders__title {
+    text-transform: uppercase;
+    font-family: "Raleway", monospace;
+    font-size: 9.375rem;
+    font-weight: 900;
+    line-height: 1;
+    margin: 0;
+    max-width: 100%;
+}
+
+.sliders__text {
+    font-family: "Roboto", sans-serif;
+    color: #303030;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.5;
+    text-align: right;
+}
+
+.sliders__link {
+    display: block;
+    text-align: right;
+    font-family: "Roboto", sans-serif;
+    color: #e10011;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.sliders__link:hover {
+    text-decoration: underline;
+}
+
+.sliders__block-img {
+    width: 45%;
+}
+
+.sliders__img {
+    max-width: 100%;
+}
+
+.dotted {
+    margin: 50px auto;
+    width: 63px;
+}
+
+.dot {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: #303030;
+    display: inline-block;
+    margin: auto;
+}
+
+.dot:not(:last-child) {
+    margin-right: 10px;
+}
+
+.dot--red {
+    background: #e10011;
+}
+
+
+
+/*catalog*/
+
+.catalog {
+    background: #fff;
+    padding: 114px 71px;
+    
+}
+
+.catalog__title {
+    font-family: "Raleway";
+    color: #303030;
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 1.125e;
+    text-align: center;
+    margin: 0;
+}
+
+.catalog__block-img {
+    text-align: center;
+}
+
+.catalog__text {
+    margin: 0 auto;
+    width: 50%;
+    color: #303030;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.333;
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: "Raleway", monospace;
+}
+
+
+
+/*product-list*/
+
+.product__list {
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+}
+
+.product__item {
+    list-style: none;
+    padding: 0;
+    display: inline-block;
+    height: 10px;
+    width: 30%;
+    font-size: 1rem;
+    margin-bottom: 30px;
+    height: 387px;
+    transition: box-shadow .5s;
+}
+
+.product__item:hover {
+    box-shadow: inset 0 0 0 3px #fff;
+}
+
+.product__item:first-child {
+    width: 65%;
+    background: url('../img/speaker-pill-white-standard-thrqrtleft.png');
+}
+
+.product__item:nth-child(2) {
+    background: url(../img/beats-by-dre-studio-red-highdefinition-headphones.png);
+}
+
+.product__item:nth-child(3) {
+    background: #e10011;
+    vertical-align: top;
+}
+
+.product__item:nth-child(3) p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.875rem;
+    font-weight: 900;
+    vertical-align: bottom;
+    padding: 20px;
+    margin: 0;
+    color: #fff;
+}
+
+.product__item:nth-child(3) span{
+    position: relative;
+}
+
+.product__item:nth-child(3) span::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    bottom: -10px;
+    left: 0;
+}
+
+.product__item:nth-child(4) {
+    background: url(../img/Casual-Shoes-For-Men-2.png);
+}
+
+.product__item:last-child {
+    background: url(../img/tumblr_nko8p7po0T1qddxjwo3_1280.png);
+}
+
+.product__item:not(:nth-child(2)):not(:last-child) {
+    margin-right: 5%;
+}
+
+.product__link {
+    display: block;
+    height: 387px;
+    margin: 0;
+}
+
+
+
+/*subscribe*/
+
+.subscribe {
+    margin: 100px auto;
+}
+
+.subscribe__title {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Raleway", monospace;
+    font-weight: 900;
+    line-height: 1.5;
+    font-size: 3rem;
+    color: #303030;
+    margin: 0;
+}
+
+.subscribe__text {
+    text-align: center;
+    font-family: "Raleway", monospace;
+    color: #303030;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.333;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.subscribe__form {
+    width: 70%;
+    margin: 37px auto;
+    font-size: 0;
+    background: #fff;
+    border-radius: 60px;
+}
+
+
+.subscribe__email {
+    display: inline-block;
+    width: 70%;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.fa {
+    color: #979797;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.333;
+    margin-right: 10px;
+}
+
+.subscribe input[type="email"] {
+    font-family: "Raleway", monospace;
+    color: #303030;
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.333;
+    width: 90%;
+    background: transparent;
+    border: none;
+}
+
+.subscribe input[type="email"]::placeholder {
+    color: #979797;
+    font-style: italic;
+}
+
+.subscribe__submit {
+    display: inline-block;
+    width: 30%;
+}
+
+.subscribe__submit input[type="submit"]{
+    background: #e10011;
+    font-family: "Roboto", monospace;
+    color: #fff;
+    font-size: 1.125rem;
+    font-weight: 900;
+    text-align: center;
+    padding: 30px;
+    box-sizing: border-box;
+    border: none;
+    line-height: 1.5;
+    width: 100%;
+    border-top-right-radius: 60px;
+    border-bottom-right-radius: 60px;
+    cursor: pointer;
+    text-transform: uppercase;
+    height: 100%;
+}
+
+.subscribe__submit input[type="submit"]::after {
+    content: "";
+    position: relative;
+    right: -10px;
+    border: 10px solid transparent;
+    border-left: 10px solid #fff;
+    z-index: 10;
+}
+
+
+
+/*contacts*/
+
+.contacts {
+    margin: 100px auto;
+}
+
+.contacts__list {
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contacts__item {
+    padding: 0;
+    margin: 0 auto;
+    display: inline-block;
+    list-style: none;
+    text-align: center;
+}
+
+.contacts__item:not(:last-child) {
+    margin-right: 20px;
+}
+
+.contacts__link {
+    width: 70px;
+    height: 70px;
+    display: block;
+    border-radius: 50%;
+    background: #fff;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+}
+
+.contacts__link:hover .fa {
+    color: #e10011;
+}
+
+.contacts__link .fa {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.125rem;
+    transition: .5s;
+}
+
+
+/*footer*/
+
+.footer-text {
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    color: #979797;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.333;
+}
+
+.footer-text span {
+    color: #303030;
+}

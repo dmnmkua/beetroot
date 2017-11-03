@@ -1,0 +1,42 @@
+.second-section {
+  background: #00c4c4 url(../img/img-1.png) no-repeat 15% 50%;
+  padding: 180px 0 230px 0;
+  position: relative;
+
+  @media screen and (max-width: 800px) {
+    background: #00c4c4;
+  }
+
+  &__container {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__desc-wrap {
+    max-width: 500px;
+  }
+
+  &__title {
+    font-family: Raleway, sans-serif;
+    color: #fff;
+    font-size: 5.625rem;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 25px;
+  }
+
+  &__desc {
+    font-family: Raleway, sans-serif;
+    color: #fff;
+    font-size: 1.063rem;
+    font-weight: 300;
+    line-height: 1.588;
+    margin: 0;
+
+    &:last-child {
+      margin-top: 20px;
+    }
+  }
+}

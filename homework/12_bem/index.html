@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nike</title>
+    <link rel="stylesheet" href="libs/normalize/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="wrapper">
+        
+<!--        card-->
+        <div class="card">
+            
+<!--            logo-->
+            <div class="card__logo">
+                <img src="img/logo.png" alt="logo" class="card__logo-img">
+            </div> <!--            ./logo-->
+            
+<!--            card product-->
+            <div class="card__product">
+                
+                <div class="card__product-img">
+                    <img src="img/Nike-SB-Stefan-Janoski-Max.png" alt="Nike SB Stefan Janoski Max" class="card__img">
+                    <div class="card__select-color">
+                        <div class="card__color card__color--black card__color--active"></div>
+                        <div class="card__color card__color--white"></div>
+                        <div class="card__color card__color--red"></div>
+                        <div class="card__color card__color--turquoise"></div>
+                    </div>
+                </div>
+                
+<!--                card product price-->
+                <div class="card__product-price">
+                    
+                    <h2 class="card__title">Nike SB Stefan Janoski Max</h2>
+                    
+                    <p class="card__text">Unisex Skateboarding Shoe</p>
+                    
+                    <div class="card__rating">
+                        <i class="material-icons card__rating-icon card__rating-icon--yellow">star</i>
+                        <i class="material-icons card__rating-icon card__rating-icon--yellow">star</i>
+                        <i class="material-icons card__rating-icon card__rating-icon--yellow">star</i>
+                        <i class="material-icons card__rating-icon">star</i>
+                        <i class="material-icons card__rating-icon">star</i>
+                    </div>
+                    
+<!--                    card form select-->
+                    <form action="" class="card__order">
+                        
+                        <div class="card__select">
+                           
+                            <label for="" class="card__label">
+                               
+                                <select name="size" id="" class="card__size">
+                                    <option value="size" name="size" disabled selected>Size</option>
+                                    <option value="38" name="size">38</option>
+                                    <option value="39" name="size">39</option>
+                                    <option value="40" name="size">40</option>
+                                </select>
+                                
+                                <i class="material-icons card__icon">keyboard_arrow_down</i>
+                                
+                            </label>
+                            
+                            <label for="" class="card__label">
+                               
+                                <select name="quantity" id="" class="card__quantity">
+                                    <option value="Qty" name="size" disabled selected>Qty</option>
+                                    <option value="1" name="quantity">1</option>
+                                    <option value="2" name="quantity">2</option>
+                                    <option value="3" name="quantity">3</option>
+                                </select>
+                                
+                                <i class="material-icons card__icon">keyboard_arrow_down</i>
+                                
+                            </label>
+                            
+                            <button class="card__button">Add to card</button>
+                            
+                        </div>
+                        
+                    </form> <!--                    ./card form select-->
+                    
+                </div> <!--                ./card product price-->
+                
+            </div> <!--            ./card product-->
+            
+        </div> <!--        ./card-->
+        
+    </div>
+</body>
+</html>

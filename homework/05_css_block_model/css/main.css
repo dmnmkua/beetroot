@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 20px;
+    margin: 0;
+    background: #0091CE;
+    border: 20px solid #007AAD;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+.wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.header {
+    font-size: 1.7rem;
+    margin-bottom: 40px;
+}
+
+.weather-table__list {
+    padding: 0;
+    font-size: 0;
+    border: 2px solid #fff;
+    background: #fff;
+}
+
+.weather-table__list:hover .weather-table__item {
+    opacity: .7;
+}
+
+.weather-table__item {
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+    margin: 0;
+    border: 2px solid #fff;
+    font-size: 1rem;
+    text-align: center;
+/*    opacity: .7;*/
+    transition: opacity .1s ease-in;
+}
+
+.weather-table__list .weather-table__item:hover {
+    opacity: 1;
+}
+
+.quarter {
+    width: 25%;
+}
+
+.half {
+    width: 50%;
+}
+
+.integer {
+    width: 100%;
+}
+
+.lisbon {
+    background: #0091CE;
+}
+
+.paris {
+    background: #00D1CD;
+}
+
+.belgrade {
+    background: #A65398;
+}
+
+.moscow {
+    background: #D43243;
+}
+
+.tel-aviv {
+    background: #F55B43;
+}
+
+.cair {
+    background: #FFD45C;
+}
+
+.new-york {
+    background: #7FD697;
+}
+
+.new-delhi {
+    background: #539B99;
+}
+
+.san-francisco {
+    background: #DF4997;
+}
+
+.tokyo {
+    background: #00A366;
+}
+
+.sydney {
+    background: #6C5999;
+}
+
+.weather-table__town {
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin: 15px auto;
+}
+
+.weather-table__weather {
+    font-size: 1.5rem;
+    opacity: .7;
+    line-height: 1rem;
+    margin: 15px auto;
+}
+
+.wi {
+    font-weight: 400;
+    font-size: 2rem;
+    position: relative;
+    top: 3px;
+}
+
+.footer {
+    font-weight: 600;
+}

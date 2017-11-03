@@ -1,0 +1,52 @@
+@import "libs.scss";
+
+$main-color: #5cf1be;
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.content {
+  max-width: 1170px;
+  margin: 0 auto;
+
+  @media screen and (max-width: 1200px) {
+    max-width: 900px;
+  }
+
+  @media screen and (max-width: 930px) {
+    max-width: 750px;
+  }
+
+  @media screen and (max-width: 767px) {
+    max-width: 700px;
+    padding: 0 10px;
+  }
+}
+
+
+
+//        SECTION-FIRST
+@import "layout/section-first.scss";
+
+//        SECTION-SECOND
+@import "layout/section-second.scss";
+
+//        SECTION-THIRD
+@import "layout/section-third.scss";
+
+//        SECTION-FOURTH
+@import "layout/section-fourth.scss";
+
+//        SECTION-FIFTH
+@import "layout/section-fifth.scss";
+
+//        SECTION-SIX
+@import "layout/section-six.scss";
+
+//        SECTION-SEVEN
+@import "layout/section-seven.scss";
+
+//        SECTION-EIGhT
+@import "layout/section-eight.scss";

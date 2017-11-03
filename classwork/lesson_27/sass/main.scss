@@ -1,0 +1,37 @@
+// normalize
+@import "../libs/normalize/normalize.css";
+
+// Slick
+@import "../libs/slick/slick.scss";
+@import "../libs/slick/slick-theme.scss";
+
+// fonts karla and droid mono sans
+@import url('https://fonts.googleapis.com/css?family=Droid+Sans+Mono|Karla:400,700');
+
+// fontawesome
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+
+// google icons
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, #f6f6f6 0%, #f6f6f6 50%, #fff 50%);
+}
+
+// .container {
+//
+// }
+
+//      HEADER
+@import "layout/header.scss";
+
+//      SECTION FIRST
+@import "layout/section-first.scss";
+
+//      SECTION SECOND
+@import "layout/section-second.scss";

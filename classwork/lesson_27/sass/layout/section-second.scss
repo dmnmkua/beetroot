@@ -1,0 +1,39 @@
+.section-second {
+  padding: 75px;
+  position: relative;
+}
+
+.section-second__header-wrap {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-second__header {
+  position: absolute;
+  font-family: Karla;
+  color: #1f1f1f;
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+}
+
+.section-second__select-wrap {
+
+}
+
+.section-second__select {
+  position: relative;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  padding: 25px 35px;
+  font-family: Karla;
+  color: #a5a5a5;
+  font-size: 1.25rem;
+  font-weight: 700;
+}

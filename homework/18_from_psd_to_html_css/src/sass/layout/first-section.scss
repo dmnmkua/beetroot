@@ -1,0 +1,161 @@
+.first-section {
+  min-height: 100vh;
+  padding: 50px 0 40px 0;
+  background: url(../img/img.png) no-repeat;
+  position: relative;
+  overflow: hidden;
+
+  &__main-header {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 260px;
+  }
+
+  .logo-wrap {
+    font-family: Pacifico, sans-serif;
+    color: #262626;
+    font-size: 3.125rem;
+    font-weight: 400;
+    line-height: 0.5;
+  }
+
+  .nav {
+
+    &__btn {
+      border: none;
+      background: none;
+      display: none;
+
+      @media screen and (max-width: 800px) {
+        display: block;
+      }
+    }
+
+    &__list {
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      list-style: none;
+
+      @media screen and (max-width: 800px) {
+        position: absolute;
+        flex-direction: column;
+        right: -100px;
+        align-items: flex-end;
+        justify-content: flex-start;
+        padding: 20px 40px;
+        background: #fff;
+        opacity: 0;
+        transition: .3s;
+        transform: scaleX(0);
+        height: 100vh;
+
+        &--open {
+          right: 0;
+          transform: scaleX(1);
+          opacity: .8;
+        }
+      }
+    }
+
+    &__item {
+
+      &:not(:last-child) {
+        margin-right: 30px;
+
+        @media screen and (max-width: 800px) {
+          margin: 0;
+        }
+      }
+    }
+
+    &__link {
+      font-family: Raleway, sans-serif;
+      color: #262626;
+      font-size: 1rem;
+      font-weight: 700;
+      line-height: 1.563;
+      text-transform: uppercase;
+      text-decoration: none;
+      display: block;
+      padding: 10px 0;
+      position: relative;
+
+      &:before {
+        content: "";
+        height: 2px;
+        width: 100%;
+        background: transparent;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: .3s ease-in-out;
+      }
+
+      &:hover:before {
+        background: #ff6033;
+      }
+    }
+  }
+
+  &__desc-wrap {
+    max-width: 370px;
+  }
+
+  &__title {
+    font-family: Raleway, sans-serif;
+    color: #262626;
+    font-size: 3.75rem;
+    font-weight: 800;
+    line-height: 0.417;
+    margin: 0;
+  }
+
+  &__desc {
+    font-family: Raleway, sans-serif;
+    color: #262626;
+    font-size: 1.063rem;
+    font-weight: 300;
+    line-height: 1.588;
+    margin: 0;
+    margin-top: 35px;
+  }
+
+  &__btn {
+    background-color: #ff6033;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+    font-family: Raleway, sans-serif;
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 1.35;
+    padding: 20px 25px;
+    text-transform: uppercase;
+    border: none;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: .3s;
+
+    &:hover {
+      box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5),
+                  inset 0 0 0 1px #ff6033;
+      background: transparent;
+      color: #262626;
+    }
+  }
+
+  &__mouse {
+    margin-top: 295px;
+    text-align: center;
+
+    &-img {
+
+    }
+  }
+}

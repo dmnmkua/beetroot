@@ -1,0 +1,109 @@
+.section-first {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.section-first__img {
+  background: url('../../img/Layer-2.png') top center no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+
+//      SLIDER
+.slider__wrap {
+  padding: 75px;
+  background: #1f1f1f;
+  color: #fff;
+  width: 400px;
+}
+
+.slider__over-header {
+  font-family: Karla;
+  color: #aaa;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+}
+
+.slider__header {
+  font-family: "Droid Sans Mono";
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.223;
+}
+
+.underline {
+  height: 5px;
+  background: #fff;
+  width: 60%;
+}
+
+.slider__desc {
+  font-family: Karla;
+  color: #fff;
+  font-size: .8rem;
+  font-weight: 400;
+  line-height: 1.963;
+  margin-bottom: 45px;
+}
+
+.slider__link {
+  text-decoration: none;
+  color: #fff;
+  transition: .3s;
+}
+
+.slider__link-desc {
+  margin-right: 20px;
+}
+
+.fa-long-arrow-right--transform {
+  transition: .5s;
+}
+
+.slider__link:hover .fa-long-arrow-right--transform {
+  transform: translateX(30px);
+}
+
+.slider__btns {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  border-bottom: 1px solid lightgrey;
+  font-family: Karla;
+  color: #a5a5a5;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.slider__btn-left,
+.slider__btn-right {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  padding: 30px 0;
+  transition: .5s;
+  cursor: pointer;
+
+  &:hover {
+    color: #fff;
+    background: lightgrey;
+  }
+}
+
+.slider__btn-left {
+  border-right: 1px solid lightgrey;
+}
+
+.slider__btn-desc {
+  padding: 0 25px;
+}

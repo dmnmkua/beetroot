@@ -1,0 +1,10 @@
+.block {
+    width: 300px;
+    height: 300px;
+    margin: 300px auto;
+    border: 1px solid black;
+}
+
+.block:hover {
+    border-color: #ddd;
+}

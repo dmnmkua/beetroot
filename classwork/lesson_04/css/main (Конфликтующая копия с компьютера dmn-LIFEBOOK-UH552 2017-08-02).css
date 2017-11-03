@@ -1,0 +1,12 @@
+.block {
+    width: 300px;
+    height: 300px;
+    margin: 100px auto;
+    border: 1px solid black;
+    background-image: #000;
+    background-image: url();
+}
+
+.block:hover {
+    border-color: #ddd;
+}

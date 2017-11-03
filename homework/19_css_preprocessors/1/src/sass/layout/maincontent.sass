@@ -1,0 +1,238 @@
+.profile
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  position: relative
+
+  @media screen and (max-width: 1024px)
+    flex-direction: column
+
+  &:before,
+  &:after
+    color: $main-color
+    font-size: 3rem
+    position: absolute
+    top: 43%
+
+  &:before
+    content: url(../img/arrow_left.svg)
+    left: 10px
+
+  &:after
+    content: url(../img/arrow_right.svg)
+    right: 10px
+
+.profile-left,
+.profile-right
+  width: 50%
+  padding: 120px 80px
+
+  @media screen and (max-width: 1024px)
+    width: 100%
+    padding: 30px 50px
+
+  @media screen and (max-width: 460px)
+    width: 100%
+    padding: 30px 30px
+
+
+
+
+//        PROFILE-LEFT
+
+.profile-left
+  position: relative
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  justify-content: center
+
+  &:after
+    content: ""
+    position: absolute
+    height: 86%
+    width: 2px
+    background: $main-color
+    right: 0
+    top: 7%
+
+    @media screen and (max-width: 1024px)
+      background: none
+
+  // PHOTO BLOCK
+
+  &__photo
+    max-width: 388px
+    height: 388px
+    // overflow: hidden
+    position: relative
+
+    @media screen and (max-width: 460px)
+      width: 290px
+      height: 290px
+
+    &:before,
+    &:after
+      content: ""
+      position: absolute
+      top: -15px
+      left: -15px
+
+    &:before
+      width: 418px
+      height: 2px
+      background: linear-gradient(to left, $main-color 0%, $main-color 22%, transparent 22%, transparent 78%, $main-color 78%, $main-color 100%)
+      @media screen and (max-width: 460px)
+        width: 320px
+
+    &:after
+      width: 2px
+      height: 418px
+      background: linear-gradient(to bottom, $main-color 0%, $main-color 22%, transparent 22%, transparent 78%, $main-color 78%, $main-color 100%)
+      @media screen and (max-width: 460px)
+        height: 320px
+
+  &__img
+    border: 2px solid $main-color
+    max-width: 388px
+
+    @media screen and (max-width: 460px)
+      width: 290px
+      height: 290px
+
+
+
+//          PROFILE-RIGHT
+
+.profile-right
+  text-align: center
+
+  //      NAME
+
+  &__name
+    margin: 0 0 60px 0
+    font-family: Roboto
+    color:  #666
+    font-size: 2.25rem
+    font-weight: 900
+    position: relative
+
+    &:before
+      content: ""
+      height: 2px
+      width: 30%
+      background: $main-color
+      position: absolute
+      left: 35%
+      bottom: -30px
+      margin: 0 auto
+      text-align: center
+
+  //        PROFESSION
+
+  &__profession
+    margin: 0
+    font-family: Raleway
+    color:  #666666
+    font-size: 1.5rem
+    font-weight: 400
+
+  //        SOCIAL
+
+  &__social
+    color: white
+    font-size: .7rem
+    margin: 30px 0
+    display: -webkit-flex
+    display: -ms-flex
+    display: flex
+    justify-content: center
+
+  &__link
+    color: #fff
+
+    .fa-stack
+      border-radius: 50%
+      box-shadow: 0 0 0 2px #ccc
+      transition: all .3s
+
+      &:hover
+        box-shadow: 0 0 0 2px $main-color
+
+      &-1x
+        color: #ccc
+        transition: all .3s
+
+        &:hover
+          color: $main-color
+
+    &:not(:last-child)
+      margin-right: 10px
+
+  //         DESCRIPTION
+
+  &__desc
+    color:  #333
+    font-size: 0.875rem
+    font-weight: 500
+    line-height: 1.714
+    position: relative
+    margin-bottom: 50px
+
+    @media screen and (max-width: 1024px)
+      font-size: 1.2rem
+
+    &:after
+      content: ""
+      width: 10%
+      height: 4px
+      position: absolute
+      bottom: -20px
+      left: 45%
+      background: linear-gradient(to left, $main-color 0%, $main-color 20%, transparent 20%, transparent 30%, $main-color 30%, $main-color 70%, transparent 70%, transparent 80%, $main-color 80%, $main-color 100% )
+
+  //        BUTTON
+
+  &__button
+    text-transform: uppercase
+    color:  #333
+    font-size: 0.875rem
+    font-weight: 500
+    padding: 6px 12px
+    background: none
+    border: 1px solid $main-color
+    cursor: pointer
+    transition: .3s
+
+    &:hover
+      background: $main-color
+      color: #fff
+
+    &:active
+      transform: scale(1.1)
+
+
+//        SLIDER
+
+.slider
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  justify-content: center
+  margin-bottom: 100px
+
+  @media screen and (max-width: 460px)
+    margin-bottom: 30px
+
+  &__item
+    width: 10px
+    height: 10px
+    border-radius: 50%
+    background: $main-color
+
+    &:not(:last-child)
+      margin-right: 10px
+
+    &:nth-child(2)
+      background: #fff
+      box-shadow: 0 0 0 1px $main-color

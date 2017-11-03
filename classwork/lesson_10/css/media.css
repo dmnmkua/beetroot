@@ -1,0 +1,34 @@
+@media screen and (max-width: 950px) {
+    .block {
+        width: 730px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .block {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .wrapper {
+        padding: 0 15px;
+    }
+    
+    .block {
+        width: 200px;
+        height: 70px;
+    }
+    
+    .first {
+        background: lightgreen;
+    }
+    
+    .second {
+        background: green;
+    }
+    
+    .third {
+        background: darkgreen;
+    }
+}

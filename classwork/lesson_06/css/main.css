@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    height: 100vh;
+    width: 300px;
+    box-shadow: 0 5px 3px #000;
+    transform: translateX(-100%);
+    transition: 1s;
+}
+
+input:checked + .nav {
+    transform: translateX(0);
+}
+
+input {
+    display: none;
+}
