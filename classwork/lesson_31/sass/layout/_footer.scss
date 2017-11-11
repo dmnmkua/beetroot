@@ -1,0 +1,58 @@
+.footer {
+  background: #39312f;
+  padding: 25px 15px 35px;
+
+  @include mediaDevice {
+    padding: 90px 0;
+  };
+}
+
+.communication__social {
+  text-align: center;
+}
+
+.social__list {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  justify-content: center;
+  margin-bottom: 10px;
+
+  @include mediaDevice {
+    margin-bottom: 30px;
+  };
+}
+
+.social__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.social__link {
+  font-size: 2.5rem;
+  color: #fff;
+
+  &:active {
+    color: $accent-color;
+  }
+
+  @include largeDevice {
+    &:hover {
+      color: $accent-color;
+    }
+  };
+}
+
+.communication__address {
+  font-style: normal;
+  font-weight: 700;
+  font-family: Lato, sans-serif;
+  font-size: .870rem;
+  color: #fff;
+
+  @include smallDevice {
+    font-size: 1rem;
+  };
+}

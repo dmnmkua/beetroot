@@ -1,0 +1,18 @@
+.btn {
+  text-transform: uppercase;
+  font-family: Lato, sans-serif;
+  font-size: .8125rem;
+  line-height: 1;
+  border: 2px solid #39312f;
+  display: inline-block;
+  padding: 18px 60px;
+  text-decoration: none;
+  color: #39312f;
+  letter-spacing: .5px;
+  transition: .1s;
+
+  &:active {
+    background: #39312f;
+    color: #fff;
+  }
+}
