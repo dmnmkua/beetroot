@@ -317,14 +317,19 @@
     transform: scale(2); } }
 
 .section-first {
-  display: -webkit-flex;
   display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
   align-items: stretch; }
 
 .section-first__img {
-  background: url("../../img/Layer-2.png") top center no-repeat;
+  background: url("../img/Layer-2.png") top center no-repeat;
   background-size: cover;
   width: 100%; }
 
@@ -365,20 +370,24 @@
 .slider__link {
   text-decoration: none;
   color: #fff;
+  -webkit-transition: .3s;
   transition: .3s; }
 
 .slider__link-desc {
   margin-right: 20px; }
 
 .fa-long-arrow-right--transform {
+  -webkit-transition: .5s;
   transition: .5s; }
 
 .slider__link:hover .fa-long-arrow-right--transform {
+  -webkit-transform: translateX(30px);
   transform: translateX(30px); }
 
 .slider__btns {
-  display: -webkit-flex;
   display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   border-bottom: 1px solid lightgrey;
   font-family: Karla;
@@ -388,13 +397,19 @@
 
 .slider__btn-left,
 .slider__btn-right {
-  display: -webkit-flex;
   display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   width: 50%;
   padding: 30px 0;
+  -webkit-transition: .5s;
   transition: .5s;
   cursor: pointer; }
   .slider__btn-left:hover,
@@ -736,8 +751,9 @@
   margin-right: 40px; }
 
 .section__fifth {
-  display: -webkit-flex;
   display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background: #1f1f1f; }
 
@@ -745,6 +761,7 @@
   width: 25%;
   padding: 100px 50px 0;
   background: #1f1f1f;
+  -webkit-transform: translateY(-100px);
   transform: translateY(-100px); }
 
 .section-fifth__over-header {
@@ -795,7 +812,7 @@
 
 .section-fifth__img-wrap {
   width: 75%;
-  background: #000 url(../../img/Layer-10.png) top center no-repeat;
+  background: #000 url(../img/Layer-10.png) top center no-repeat;
   background-size: cover; }
 
 .section-fifth__img {

@@ -1,6 +1,7 @@
 .section__fifth {
-  display: -webkit-flex;
   display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background: #1f1f1f;
 }
@@ -9,7 +10,8 @@
   width: 25%;
   padding: 100px 50px 0;
   background: #1f1f1f;
-  transform: translateY(-100px);
+  -webkit-transform: translateY(-100px);
+          transform: translateY(-100px);
 }
 
 .section-fifth__over-header {
@@ -66,7 +68,7 @@
 
 .section-fifth__img-wrap {
   width: 75%;
-  background: #000 url(../../img/Layer-10.png) top center no-repeat;
+  background: #000 url(../img/Layer-10.png) top center no-repeat;
   background-size: cover;
 }
 
