@@ -1,0 +1,120 @@
+.footer {
+  padding: 20px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #2c2c2c;
+}
+
+.footer__content {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  border: 1px solid #757575;
+  align-content: stretch;
+}
+
+.footer__logo {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid #757575;
+  flex-shrink: 0;
+}
+
+.footer__logo-img {
+  width: 60%;
+  height: 60%;
+}
+
+.footer__logo-skateboarding {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid #757575;
+  flex-shrink: 0;
+}
+
+.footer__logo-skateboarding-img {
+  width: 60%;
+  height: 60%;
+}
+
+.footer__nav {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: stretch;
+  padding: 30px;
+  border-right: 1px solid #757575;
+}
+
+.footer__nav-list {
+  list-style: none;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-items: stretch;
+}
+
+.footer__nav-link {
+  display: block;
+  color: #757575;
+  text-decoration: none;
+  padding: 10px;
+  font-family: Karla;
+  font-size: .8rem;
+  font-weight: 400;
+}
+
+.footer__address {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+  padding: 30px;
+}
+
+.footer__email {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+}
+
+.footer__email-link {
+  color: #757575;
+  text-decoration: none;
+  margin-right: 30px;
+  font-family: Karla;
+  font-size: .8rem;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.footer__soc-list {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__soc-item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.footer__soc-link {
+  color: #757575;
+  text-decoration: none;
+}
